@@ -1,0 +1,51 @@
+\documentclass[11pt,a4paper,oneside,table,xcdraw]{report}
+\input{include/settings/settings}
+
+
+\begin{document} 
+
+% COVER PAGE, TITLE PAGE AND IMPRINT PAGE
+\pagenumbering{roman}					% Roman numbering (starting with i (one)) until first main chapter
+%Setting links to be blue
+%\hypersetup{colorlinks, citecolor=black,
+%	filecolor=black, linkcolor=blue,
+%	urlcolor=blue}
+\input{include/frontmatter/Titlepage}
+
+
+%\input{include/frontmatter/Abstract}
+%Setting links to be black
+%\hypersetup{colorlinks, citecolor=black,
+%	filecolor=black, linkcolor=black,
+%	urlcolor=black}
+% INDHOLDSFORTEGNELSE
+\tableofcontents
+
+\setcounter{page}{1} 					% Arabic page numering (starting at 1(one)) throughout the paper
+\pagenumbering{arabic}
+%Setting links to be blue
+\hypersetup{colorlinks, citecolor=black, filecolor=black, linkcolor=blue, urlcolor=blue}
+
+ 
+% Include chapters
+\input{include/Introduction}
+\input{include/Outline}
+
+\input{include/Analysis}
+
+\input{include/Methods}
+
+\input{include/Design}
+
+% LITTERATURLISTE
+%\addcontentsline{toc}{chapter}{Litteratur}
+%\input{include/backmatter/Litteraturliste}
+\bibliography{include/backmatter/bibliography}
+
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+
+\begin{appendices}
+\input{include/Appendices}
+\end{appendices}
+
+\end{document}
