@@ -52,6 +52,15 @@
 \usepackage[toc,page]{appendix}
 \usepackage{wrapfig}
 \usepackage{caption}
+\newcommand*{\captionsource}[2]{%
+  \caption[{#1}]{%
+    #1%
+    \\\hspace{\linewidth}%
+    Source: #2%
+  }%
+}
+
+
 \usepackage{cleveref}
 % OPTIONAL SETTINGS (DELETE OR COMMENT TO SUPRESS)
 

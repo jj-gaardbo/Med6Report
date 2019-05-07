@@ -1,134 +1,67 @@
 \chapter{Analysis}\label{chap:analysis}
-\begin{comment}
-    Climate change is a problem that can be traced all the way back to the origin of humans[cite]. Today, the list of problems climate change becomes longer, and longer. For an example, the increasing temperature can affect the oceans, and cause droughts, but also the clearing of the rain forests, reduces the amount of carbon dioxide gasses the earth naturally reduces[cite]. Even knowing all the consequences, humans still continue to actively contribute negatively to the climate changing. There are many already existing ways that people are improving and reducing the climate change, however, multiple studies suggests that the average person might be unaware or does not care about the climate changing for different reasons[cite]. While the average person is not the main reason for the climate changing, they can still play an important role to help contribute by creating awareness and deal properly with the consequences. However, the average person is not necessarily completely clear on what climate change includes and what the consequences are and what they can do to help. 
-\end{comment}
-\section{Problem Area}
-    The Danes are concerned about climate change, as a result of carbon emissions. They believe the strongest individual counter measure to be garbage sorting (38\%), taking the bike or public transportation (32\%), replacing their current car with an electric or hybrid version (31\%), and flying less (30\%)\cite{concito}. When it comes down to the expected climate action, the individual Dane does not make the required sacrifices to live up to their own expectations, with only 16\% saying they flew less in 2018\cite{concito}. When asked, 54\% said that they believe it is necessary for them to make behavioural lifestyle changes, while 24\% believe that technology will solve the climate issues, without them needing to make substantial lifestyle changes\cite{concito}.
+    In this chapter, the general problem area of the danish people's concern about climate change, or the lack thereof, will be described. An apparent inconsistency between climate change awareness and the personal climate actions will also be investigated. Furthermore, the potential of narrative games, particularly in  Immersive Virtual Reality(VR), as an approach for affecting real life behaviour, will be explored. The knowledge obtained throughout this chapter, will culminate in a set of design requirements and a problem statement that will be used to design, develop and evaluate upon a prototype of a VR game with personal climate actions as the main theme.
+
+\section{Problem Area}\label{sec:problemArea}
+    For several years the consensus among scientists and the reliability of the scientific data regarding anthropogenic climate change, and predictions about future impact, has increased, making the issue hard to deny\cite{the5Ds, scientistConsensus, publicEngagementUnderstanding}. Around one third of many countries' carbon emission come from domestic energy-use and private travel\cite{reorientingClimageChangeCommunication}. There is, however, still a discrepancy between the public's awareness of the subject, in developed countries such as Denmark, and what individual people do to reduce their personal carbon footprint. Most of these people's lack of personal climate action, is a result of a psychological distancing towards the matter\cite{the5Ds, publicEngagementUnderstanding}. They believe that there will be no immediate personal consequences, because climate change is both spatially and temporally far away\cite{publicEngagementUnderstanding}.
     
-    When asked about motives for making an effort towards more climate friendly measures like using public transport instead of a car, insulating their house post build, or buying less energy intensive appliances, only 30\% said that they did it to help the environment, while 31\% said they did it to save money. 23\% did however reply that they simply did not do those environmentally friendly efforts\cite{concito}.
+    \subsection{Climate survey}
+        In a survey from 2018, made by the danish think tank Concito\footnote{\href{https://concito.dk}{Concito Website: https://concito.dk}}, respondents(n=1076) were asked about their opinions on climate change and their personal ${CO_2}$ footprint.
+        
+        The respondents were asked about how serious climate change was on a global scale. 46\% and 42\% responded with either very serious or to some degree, respectively. 
+        
+        Mostly, the Danes were concerned about more extreme storms and downpours (73\%), rising water levels (65\%), larger and more widespread desert areas (59\%), increasing extinction of animal and plant species (55\%), and increased lack of drinkable water (52\%). The question accepted multiple answers\cite{concito}.
+        % There is an awareness and a global concern
+        
+        When asked about to what degree they themselves were feeling the effects of climate changes, 4\% said that they were experiencing it to a great extent, while 21\% replied only to some extent. This leaves 44\% saying that they experienced it to a lesser degree and 24\% replying they did not experience at all\cite{concito}. This correlates with another question of the survey asking about how concerned the respondent were that climate change would personally hurt them, where 11\% said that they were greatly worried about damage to them, and 37\% replied that they were to some extent worried\cite{concito}.
+        % Do not feel the effects
+        
+        When asked, 54\% said that they believe it is necessary for them to make behavioural lifestyle changes, while 24\% believe that technology will solve the climate issues, without them needing to make substantial lifestyle changes\cite{concito}.
+        % About half feel a personal responsibility
+        
+        The danish people believe the strongest individual counter measure in order to reduce their personal carbon emission to be garbage sorting (38\%), riding the bike or public transportation (32\%), replacing their current car with an electric or hybrid version (31\%), and flying less (30\%). The question accepted a maximum of 5 answers\cite{concito}.
+        % Believe in mostly transportation related solutions
+
+        When it comes down to the expected climate action, the individual Dane does not make the required sacrifices to live up to their own expectations, with only 16\% saying they flew less from 2016-2018 and less than half(48\%) use the bike or public transportation. The question accepted multiple answers\cite{concito}.
+        % People still fly a lot knowing that it is a "sin" only some people use bike or public transportation
+        
+        When asked about motives for making an effort towards more climate friendly measures like using public transport instead of a car, insulating their house post build, or buying less energy intensive appliances, only 30\% said that they did it to help the environment, while 31\% said they did it to save money. 23\% did however reply that they simply did not do those environmentally friendly efforts\cite{concito}.
+        % There are about as many financially related incentives to change the individual behaviour than climate related
+        
+        Based on this data, it seems that people in Denmark are well aware of climate change, and are concerned on a global scale. They do, however, not seem to feel the consequences of it themselves. Only about half of the respondents feel a personal responsibility to change their everyday behaviour, while the rest either believe in technology, none of the above or do not know. People are still flying as much as they used to, and only about half ride bikes or use public transportation and leave the car in the garage. It is not clearly described how many of the respondents actually own a car and how often they use it. This data confirms that there is a discrepancy between the level of awareness and the lack of personal climate action towards reducing $CO_2$ emission in the danish households.
     
-    Mostly the Danes were concerned about more extreme storms and downpours (73\%), rising water levels (65\%), larger and more widespread desert areas (59\%), increasing extinction of animal and plant species (55\%), and increased lack of drinkable water (52\%)\cite{concito}. When asked about to what degree they themselves were feeling the effects of climate changes, 4\% said that they were experiencing it to a great extent, while 21\% replied only to some extent\cite{concito}. This leaves 44\% saying that they experienced it to a lesser degree and 24\% replying they did not experience at all\cite{concito}. This correlates with another question of the survey asking about how concerned the respondent were that climate change would personally hurt them, where 11\% said that they were greatly worried about damage to them, and 37\% replied that they were to some extent worried\cite{concito}.
-
-
-Evidence for Learning through Immersion:
-\url{http://science.sciencemag.org/content/323/5910/66}
-
-Evidence for Virtual Reality as immersive tool:
-"Demonstrations of high-end VR facilities clearly show, however, that immersive VR works."
-\url{http://www.cs.rug.nl/~roe/courses/OriInf/Bowman-Virtual-Reality}
-
-Evidence that Immersive VR is good for learning
-\url{https://link.springer.com/article/10.1007/BF00896880}
-
-Games can change attitude and behaviours:
-"3. Associate - games can help us make new mental associations and possibly help us save the planet.
-
-Flanagan’s team created a “Cards against humanity” type of game, but with an environmental message, called “Cops against manatees.” The game featured climate related themes. During testing, the game was shown to affect people’s recycling habits, improving them by 20 percent."
-
-\url{https://bigthink.com/paul-ratner/video-games-can-have-a-meaningful-social-impact}
-
-\section{Climate change}
-    % Peoples attitude towards it and 
-    % How do they behave
-    % Psychological barriers
-    
-    \begin{itemize}
-        \item The problem of Morale Corruption\\
-            “This convergence justifies calling it a 'perfect moral storm'. One consequence of this storm is that, even if the other difficult ethical questions surrounding climate change could be answered, we might still find it difficult to act. For the storm makes us extremely vulnerable to moral corruption.”\\
-            https://www.jstor.org/stable/30302196?seq=1\#page\_scan\_tab\_contents\\
-            \textbf{Conclusion: } Climate change caused by many individuals, limits response from person (Fragmentation of Agency). Dispersion of causes and effect, the as the response of the climate change is slow and the effect begins small, the lack of phenomenons makes it appear as less of a problem. PROBLEM AREA
-            
-            \item Predictors of public climate change awareness and risk perception around the world\\
-            “The results suggest that improving basic education, climate literacy, and public understanding of the local dimensions of climate change are vital to public engagement and support for climate action.”\\
-            https://www.nature.com/articles/nclimate2728\\
-            \textbf{Conclusion: } PROBLEM AREA
-            
-            \item In what sense does the public need to understand global climate change?\\
-            “General environmental concern or concern for the negative effects of air pollution appear not to motivate people to support programs designed to control global warming.”\\
-            https://journals.sagepub.com/doi/10.1088/0963-6625/9/3/301\\
-            \textbf{Conclusion: } PROBLEM AREA
-            
-            \item Climate change-induced migration and violent conflict\\
-            “People can adapt to these problems by staying in place and doing nothing, staying in place and mitigating the problems, or leaving the affected areas. The choice between these options will depend on the extent of problems and mitigation capabilities. People living in lesser developed countries may be more likely to leave affected areas, which may cause conflict in receiving areas. My findings support this theory, and suggest certain policy implications for climate change.”\\
-            https://www.sciencedirect.com/science/article/pii/S0962629807000601\\
-            \textbf{Conclusion: } Problem area empowerment
-            
-            \item Rethinking climate communications and the psychological climate paradox (The 5Ds)
-                \begin{itemize}
-                    \item Distant => Feels personal, near and urgent.
-                    \item Doom => Uses cognitive framings that do not backfire on the climate issue through negative affects.
-                    \item Dissonance => Reduces dissonance by providing opportunities for visible and consistent action.
-                    \item Denial => Avoids triggering the emotional need for denial.
-                    \item iDentity => Reduces cultural and political polarization on the issue.
-                \end{itemize}
-                \textbf{Conclusion: } These barriers need to be lowered. And later sections in the Analysis are going to do that.
-            \cite{the5Ds}
-            
-            \item What we think about when we're trying not to think about climate change
-            The more facts that pile up about global warming, the greater the resistance to them grows, making it harder to enact measures to reduce greenhouse gas emissions and prepare communities for the inevitable change ahead. It is a catch-22 that starts from an inadequate understanding of the way most humans think, act, and live in the world around them. With dozens of examples―from the private sector to government agencies―the book shows how to retell the story of climate change and, at the same time, create positive, meaningful actions that can be supported even by deniers.\cite{storyAboutClimateChange}
-            \textbf{Conclusion: } Make the stories about climate change positive, near, personal, and urgent.
-    \end{itemize}
-
-    
-
+    \subsection{5 Psychological Barriers}
+        The Norwegian Psychologist Per Espen Stoknes calls this discrepancy the \textit{psychological climate paradox}\cite{storyAboutClimateChange, the5Ds}. According to Stoknes, people tend to put up psychological barriers when confronted with climate change, and part of the reason is due to a failing communication about the subject. More specifically, he presents 5 psychological barriers that have to be broken down in order to achieve effective climate change communication. These are shown in \autoref{fig:5ds}.
+        
+        \begin{figure}[H]
+        	\centering
+        	\includegraphics[width=0.9\linewidth]{figure/Analysis/5ds.png}
+        	\captionsource{The five psychological barriers blocking the climate message}{What we think about when we try not to think about global warming - Per Espen Stoknes\cite{storyAboutClimateChange} (2015)}
+        	\label{fig:5ds}
+        \end{figure}
+        
+        The first barrier, \textit{Distance}, comes from e.g. a large amount of imagery of polar bears and melting ice, which can feel remote and therefore unrelatable to a majority of people\citep[p.~108]{storyAboutClimateChange}. The second barrier, \textit{Doom}, arises through fear messaging. When the climate change is framed as an inevitable disaster or the end of the world, people have a tendency to become disengaged and avoid the topic altogether\citep[p.~109]{storyAboutClimateChange}\cite{the5Ds}. \textit{Dissonance} occurs when the knowledge about e.g. the usage of fossil fuels or the meat consumption, does not match peoples behaviour. They will still drive cars and fly on vacation and eat meat. It is easy to fall in the trap of self-justification when comparing one self to other people who eat even more meat or drive and fly everywhere\citep[p.~109]{storyAboutClimateChange}\cite{the5Ds}.
+        People seek refuge from fear and guilt by denying the issue. \textit{Denial} is a self-defence mechanism that happens despite the amount of information and the individual's intelligence\citep[p.~109]{storyAboutClimateChange}. \textit{Identity} is the inner most barrier. The cultural or political identity of a person can determine whether or not a person is willing to accept and adapt to climate messaging\citep[p.~109]{storyAboutClimateChange}.
+        
+        These barriers need to be surpassed to achieve successful communication about climate change, increase the perceived importance of it and get the public people engaged in personal climate action\cite{the5Ds}.
+        
+    \subsection{Climate change engagement}
+        \cite{reorientingClimageChangeCommunication}\cite{vrEngagementClimateChange}
+        
 \section{Behavior change}
-\textit{Thus, the results of Study 1 suggested that presence and personal
-control may be the processes through which embodied experiences influence selfefficacy and pro-environmental behavior.}
-
-Self-reflectiveness, personal efficiacy
-    % How to change behavior, and in particular how to change climate behavior.
-    % 
+    As concluded in the previous section the problem is that the danish people's behaviour does not match the knowledge and concern they have. Therefore, research on how to change a behaviour seems appropriate.
+    This section describes how games can be used to transform a player and change real world attitudes towards a subject.
+    % Conclude with intermixing as a choise
     
-    % The VR aspects of this article will be discussed in a later section, but here we can write about the difficulty of communicating the issue and not mention the VR part
-    Climate change is an issue known and acknowledged by most people, but they have a hard time communicating about causes and consequences. The effects seem remote and invoking fear is counterproductive. \textit{"Engagement is considered to have three components 1) understanding(knowledge), 2) emotion (interest and concern), and 3) behaviour (action). Recent attention has turned to the potential affordances of immersive virtual environments (IVEs) – including virtual environments, virtual reality (VR), augmented reality (AR) and mixed reality (MR) - to support public engagement with climate change"}\cite{vrEngagementClimateChange}
-    
-    "An attitude consists of two components that we can shape (through gameplay):the cognitive(beliefs) and the affective(feelings). “An attitude is a combination of what you believe or expect of a certain object and how you feel about (evaluate) these expectations.”\cite{persuasiveGameplay}
-    
-    
-    "The Embedded Design Model"\cite{embeddedDesignModel}
-    \begin{itemize}
-        \item Intermixing (Balancing on-topic aspects with off-topic content)
-        \item Obfuscating (Choice of genre, not presenting the message beforehand, delayed revelation)
-        \item Distancing (Hypothetical, Metaphors, POX vs. Zombiepox)
-    \end{itemize}
-    \cite{transformationalFramework}
-    
-    Persuasive experience => Cognitive shift => Behavioural change
-    \cite{transformativeVR}
 
 
-\section{Engaging stories}
-    Engaging stories works great for knowledge transfer\citep{engagingStoryFundamentals}[p.~173-174].
-    Stories simplify complex situations, most often by using typical characters with whom people can identify\cite{engagingStoryFundamentals}.
-    
-    A character is something that a reader can identity with, and that they can care and follow through the story\citep{engagingStoryFundamentals}[p.~181].
-    
-    Engaging story needs to be concrete, using examples for example, or concrete numbers and figures \citep{engagingStoryFundamentals}[p.~181-182].
-    
-    Stories that challenge previous knowledge like a story about the life cycle environment impacts of plastic versus paper bags, where plastic bags are not always more environmentally damaging than paper bags\citep{engagingStoryFundamentals}[p.~183].
-    
-\section{Immersion Virtual Reality}
-    Immersive Virtual Environments and Climate Change Engagement
-    Climate Change will affect our lives, yet communicating about climate change has proven to be more complicated than initially thought. Recent attention has turned to the potential affordances of immersive virtual environments (IVE) to support public engagement around climate change\cite{vrEngagementClimateChange}.
-    \textbf{Conclusion: } How Immersive Virtual reality could be used to effectively communicate about climate change
-
-    Place Illusion (PI) is the type of presence that refers to the sense of "being there"\citep{vrImmersion}[p.~3551].
-    
-    Plausibility Illusion (Psi) is the illusion that what is perceived to be happening is actually happening\citep{vrImmersion}[p.~3553].
-    
-    The Plausibility Illusion does not not require realistic appearances, nor does it require realistic behaviour\citep{vrImmersion}[p.~3553]. In the control condition from Slater's paper, the virtual object simply had a humanoidal look, but could not be mistaken for a human in neither movements nor appearance\citep{vrImmersion}[p.~3553].
-    
-    The body is where PI and Psi are combined, and is instrumental in providing evidence for PI\citep{vrImmersion}[p.~3554]. When looking down at your body, wearing a HMD(Head Mounted Display), and seeing your body in the place that you expected provides strong evidence for PI\citep{vrImmersion}[p.~3554].
-    
-    You know that this virtual body is not yours, but simply a representation\citep{vrImmersion}[p.~3554]. When moving your body and seeing the limbs move accordingly, also provides a connection between the visual external world and the user\citep{vrImmersion}[p.~3554].
-
-
-\chapter{FPS}
+\section{FPS}\label{sec:FPS}
 \begin{quote}
     How can an immersive virtual reality transformational game incite an intent of behavioural change towards personal climate action in regards to $CO_{2}$ emissions? \todo{Tack on behavior change theory}
 \end{quote}
 
-\section{Temp functional design requirements}
+\section{Design Requirements}\label{designReq}
+
+\subsection{Functional design requirements}
 % Make cites into refs for sub conclusions for each section.
 \begin{itemize}
     \item Should incite an intent for a personal behaviour change in regards to CO$_2$ emissions.\todo{SPECIFY theory}
@@ -144,7 +77,7 @@ Self-reflectiveness, personal efficiacy
 \end{itemize}
 
 
-\section{Temp none-functional design requirements}
+\subsection{Non-functional design requirements}
 \begin{itemize}
     %Behavior change
     \item Use the transformational framework to incite behavioural change.\cite{transformationalFramework}
