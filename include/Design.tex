@@ -1,34 +1,8 @@
 \chapter{Design}
 
-As intermixing is the method required, two versions of the prototype will be designed.
+As the final prototype will utilise intermixing to affect a behaviour, two different prototypes will have to created. One that is overloaded with the message (75 percent) and one that is intermixed (45 percent). The following chapter will explain how the design came to be and the decisions that affected the final design.
 
-\section{Initial Designs}
-This section will present the initial concept ideas, and explain how they fulfil the design requirements found in the analysis. Finally, the concept for the final design will be chosen.
-
-\subsection{Concepts}
-
-\begin{itemize}
-    \item Get-To-Work-Simulator:\\
-    In "Get-To-Work-Simulator", the user will try to get to work as efficiently as possible, through a number of options presented throughout the experience. The user will play through mini-games, and decide how to get from A to B. Get-To-Work-Simulator will focus on improving how the individual gets about in their daily lives, and try to get more people to choose bicycle or public transportation, which the analysis explained is a significant cause for pollution.\\
-    INSERT GET-TO-WORK-SIMULATOR PICTURE HERE\\
-    \item House:\\
-    In "House", the users finds themselves in a regular house. As they start their day, they will be presented with a series of tasks for them complete. These tasks are inspired by the mechanics found in the popular VR-game "Job simulator", however they are changed to be relevant to climate change.\\
-    INSERT HOUSE PICTURE HERE\\
-    \item Local-Community-God-Simulator:\\
-    Local-Community-God-Simulator
-    \item 60 seconds climate saver:\\
-    60 seconds climate saver
-    \item Narrative Driver:\\
-    Narrative Driver
-    \item Making Mars Great Again:\\
-    Making Mars Great Again.
-\end{itemize}
-
-\subsection{Choosing the concept}
-Narrative driver is chosen because nice.
-
-\section{Final design}
-Narrative driver explained overall
+\section{Final design; Burger Car}
 
 \subsection{Narration}
 
@@ -37,9 +11,11 @@ Narrative driver explained overall
 \subsection{Environment}
 
 \section{Usability test}
-    For discerning the usability of the interactions in the design, a simple test using the SUS scale questionnaire, was conducted. The test subject were told to put the Virtual Reality headset on their head, and got one controller handed to their primary hand. The subject were then observed during the test, and afterwards instructed to fill out the SUS questionnaire, and then concluding the test, with any questions answered by the researchers.
+    For discerning the usability of the interactions in the design, a simple test using the SUS scale questionnaire, was conducted. The test participant were told to put the Virtual Reality headset on their head, and got one controller handed to their primary hand. The participant were observed during the test, and afterwards instructed to fill out the SUS questionnaire.
+    
 \subsection{Test setup}
-    The setup for the Usability test (seen in \autoref{fig:usabilitySetup}), using the SUS questionnaire, where the test subject, going through the test, were positioned in front of the monitor with the HMD on their head. The observer sitting on a couch nearby, were noting any miscellaneous usability related things.
+    The setup for the Usability test (seen in \autoref{fig:usabilitySetup}), using the SUS questionnaire, where the test subject, going through the test, were positioned in front of the monitor with the HMD on. The observer seated nearby, were noting any miscellaneous usability related things.
+    
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\linewidth]{figure/Design/UsabilitySetup.png}
@@ -48,4 +24,16 @@ Narrative driver explained overall
 \end{figure}
 
 \subsection{Test results}
-    Very usable, much burger eating, nice means.
+After the test participants have answered all 10 questions on the SUS questionnaire, the SUS score that values the usability of the design, is calculated using the official SUS method\cite{SUS}. For all odd numbered questions (1, 3, 5, 7, and 9,) 1 is subtracted from the score. For all even numbered questions (2, 4, 6, and 8,) the scores are subtracted from 5, this results in the all question scores being between the range of 0 and 4. These new scores are summed up and multiplied by 2.5, resulting in a number between 0 and 100\cite{SUS}. The final numbers' mean resulted in a mean of 87, which in SUS terms, means that the usability of the design is rated at excellent\cite{SUS}. All the individual calculated SUS scores and their reference points can be seen in \autoref{fig:susplot}. 
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\linewidth]{figure/Design/susplot.png}
+        \caption{SUS plot showing the calculated SUS score for each participant. With a total of mean of 87, the score is above the threshold that is stated to be an excellent SUS score.}
+        \label{fig:susplot}
+    \end{figure}
+
+\subsection{Observations}
+    During the usability test, an observer noted any usability issues that would occur. These notes correlated into the issue that $\frac{4}{5}$ test participants initially did not press the correct trigger on the Oculus touch controller when grabbing for the burger, and then being confused about how to grab the burger. Eventually $\frac{5}{5}$ users figured out that the controller had two trigger buttons, and then proceeded to expectedly grab the burger and quite naturally move it towards their mouth and eat it. This button was changed to the button that most test participants found natural to press to grab the burger. It was also noted that $\frac{5}{5}$ test participants smiled when the natural reaction to eat the burger, and outcome of eating the burger in Virtual Reality connected.
+    
+\section{Design summary}
